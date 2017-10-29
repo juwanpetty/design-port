@@ -1,0 +1,29 @@
+section.about-intro {
+    margin-bottom: 4rem;
+
+    .wrapper {
+        .img-hover-container {
+            width: 100%;
+            height: 400px;
+        }
+    }
+}
+
+.about {
+    .wrapper {
+        h2 {
+            margin-top: 0;
+            line-height: 1.5;
+        }
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 4rem;
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+}

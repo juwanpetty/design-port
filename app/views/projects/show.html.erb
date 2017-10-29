@@ -1,4 +1,50 @@
-Title: <%= @project.title %> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/application.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-links wrapper">
+            <%= link_to "New", new_project_path %>
+            <a href="index.html">Work</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section class="projects">
+        <div class="project-information skinny-wrapper">
+            <div class="info">
+                <h2 class="title">Waves</h2>
+                <p>September 2017</p>
+                <a href="#" class="link">google.com</a>
+            </div>
+
+            <p class="description">
+                    This fantastic agency contacted me to create a 
+                    concept for a music application. The idea was to 
+                    keep the app simple, consistent and visually stunning.
+                    The design makes good use of the typography, colors, 
+                    and artwork of artists' albums.
+            </p>
+        </div>
+
+        <ul class="project-images wrapper">
+            <li><img src="#" alt=""></li>
+            <li><img src="#" alt=""></li>
+            <li><img src="#" alt=""></li>
+        </ul>
+
+        Title: <%= @project.title %> 
 
 <br><br>
 
@@ -12,3 +58,10 @@ Link: <%= @project.link %>
 
 <%= link_to "Edit", edit_project_path(@project) %>
 <%= link_to "Delete", project_path(@project), method: :delete, data: {confirm: "Are you sure you want to delete this project?"} %>
+    </section>
+
+    <footer class="skinny-wrapper">
+    </footer>
+    
+</body>
+</html>

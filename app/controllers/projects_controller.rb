@@ -2,6 +2,7 @@ class ProjectsController < ApplicationController
     before_action :find_post, only: [:show, :edit, :update, :destroy]
     
     def index
+        @project = Project.all
     end
 
     def new

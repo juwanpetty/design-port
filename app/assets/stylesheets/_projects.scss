@@ -1,0 +1,110 @@
+.recent-projects-list {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 4rem;
+
+    a {
+        width: 100%;
+        height: 500px;
+        position: relative;
+        display: block;
+        overflow: hidden;
+
+        .item-info {
+            padding: 1rem;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 2px;
+
+            background: #EEEEEE;
+            display: block;
+        }
+    }
+}
+
+.project-information {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 2rem;
+
+    .info {
+        h2 {
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+        }
+
+        p {margin: 0;}
+        
+        & > *:not(first-child) {
+            margin: 0;
+            margin-bottom: .75rem;
+        }
+
+        .link {text-decoration: underline;}
+    }
+}
+
+.project-images  {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+        max-height: 100%;
+        max-width: 100%;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+
+        margin-bottom: 4rem;
+        border-radius: 2px;
+    }
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+
+    margin-bottom: 6rem;
+
+    a:first-child {
+        width: 100%;
+        height: 250px;
+        position: relative;
+        display: block;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 2px;
+
+            background: #EEEEEE;
+            display: block;
+        }
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-top: 1rem;
+        color: $text-primary;
+    }
+}
